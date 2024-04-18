@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mb-4">Result</h2>
+        <div class="form-group">
+            <label>Length of Vector 1:</label>
+            <p>{{ length_vector_1 }}</p>
+        </div>
+        <div class="form-group">
+            <label>Angle between Vector 1 and Vector 2:</label>
+            <p>{{ angle_vectors }}</p>
+        </div>
+        <div class="form-group">
+            <label>Distance between Point 1 and Point 2:</label>
+            <p>{{ distance_points }}</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector and Point Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 50px;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="mb-4">Vector and Point Calculator</h2>
+        <form action="/calculate" method="post">
+            <div class="form-group">
+                <label for="vector_1">Vector 1 (comma separated)</label>
+                <input type="text" class="form-control" id="vector_1" name="vector_1" required>
+            </div>
+            <div class="form-group">
+                <label for="vector_2">Vector 2 (comma separated)</label>
+                <input type="text" class="form-control" id="vector_2" name="vector_2" required>
+            </div>
+            <div class="form-group">
+                <label for="point_1">Point 1 (comma separated)</label>
+                <input type="text" class="form-control" id="point_1" name="point_1" required>
+            </div>
+            <div class="form-group">
+                <label for="point_2">Point 2 (comma separated)</label>
+                <input type="text" class="form-control" id="point_2" name="point_2" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+    </div>
+</body>
+</html>
