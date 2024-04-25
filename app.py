@@ -25,7 +25,7 @@ def distance_between_points(point1, point2):
 
 @app.route('/')
 def index():
-    return render_template('sm.html')
+    return render_template('a.html')
 
 @app.route('/calculate', methods=['POST'])
 def calculate():
