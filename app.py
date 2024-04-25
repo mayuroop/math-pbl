@@ -23,9 +23,9 @@ def distance_between_points(point1, point2):
     squared_distance = sum((a - b)**2 for a, b in zip(point1, point2))
     return math.sqrt(squared_distance)
 
-@app.route('/')
-def index():
-    return render_template('a.html')
+@app.route('/<name>')
+def index(name):
+    return render_template('a.html',name=name)
 
 @app.route('/calculate', methods=['POST'])
 def calculate():
