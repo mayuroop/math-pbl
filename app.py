@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 import requests
 
 app = Flask(__name__)
@@ -15,7 +15,7 @@ def pastebin_content():
     # Check if the request was successful
     if response.status_code == 200:
         content = response.text
-        return content
+        return render_template('pastebin_content.html', content=content)
     else:
         return "Failed to retrieve content from Pastebin"
 
