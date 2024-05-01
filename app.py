@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def pastebin_content():
     # Replace 'PASTEBIN_LINK' with the actual Pastebin link
-    pastebin_link = 'https://pastebin.com/raw/PCiaPsTa'
+    pastebin_link = 'https://pastebin.com/raw/c2u5Jv1B'
     
     # Make an HTTP GET request to the Pastebin link
     response = requests.get(pastebin_link)
