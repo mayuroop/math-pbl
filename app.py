@@ -23,7 +23,7 @@ def pastebin_content():
     if password == 'op':
     	pass
     else:
-    	return f'Your name is {password}'
+    	return f'Welcome {password} !.'
     
     # Make an HTTP GET request to the Pastebin link
     response = requests.get(pastebin_link)
