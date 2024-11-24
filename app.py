@@ -18,7 +18,7 @@ def index():
 @app.route('/wish',methods=['POST'])
 def pastebin_content():
     # Replace 'PASTEBIN_LINK' with the actual Pastebin link
-    pastebin_link = 'https://pastebin.com/raw/c2u5Jv1B'
+    pastebin_link = 'https://pastebin.com/raw/V2QwwHfc'
     password = request.form['wish']
     if password == 'op':
     	pass
